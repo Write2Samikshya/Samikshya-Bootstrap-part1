@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <title>mybootstrap1</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous">
+    <link href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="CustomStylesheet.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+
+                <form class="form-inline was-validated">
+                    <div class="form-group">
+                        <label class="col-md-2 form-control-lg" for="txtStrongPassword">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" id="txtStrongPassword" class="form-control"
+                                   placeholder="Your password">
+                            <span class="help-block">Strong Password</span>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="col-xs-2 control-label" for="txtWeakPassword">Password</label>
+                        <div class="col-xs-10">
+                            <input type="password" id="txtWeakPassword" class="form-control"
+                                   placeholder="Your password">
+                            <span class="help-block">Weak Password</span>
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="col-xs-2 control-label" for="txtAge">Age</label>
+                        <div class="col-xs-10">
+                            <input type="number" id="txtAge" class="form-control"
+                                   placeholder="Your Age">
+                            <span class="help-block">Invalid Age</span>
+                        </div>
+                    </div>
+                </form>
+
+                <br />
+                <br />
+
+                <div class="form-group has-success">
+                    <label class="form-control-label" for="inputSuccess1">Input with success</label>
+                    <input type="text" class="form-control form-control-success" id="inputSuccess1">
+                    <div class="form-control-feedback">Success! You've done it.</div>
+                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="form-control-label" for="inputWarning1">Input with warning</label>
+                    <input type="text" class="form-control form-control-warning" id="inputWarning1">
+                    <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
+                <div class="form-group has-danger">
+                    <label class="form-control-label" for="inputDanger1">Input with danger</label>
+                    <input type="text" class="form-control form-control-danger" id="inputDanger1">
+                    <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                    <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
+
+                <br />
+                <br />
+
+
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <form action="/action_page.php" class="was-validated">
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br />
+    <br />
+
+
+
+    <form action="/action_page.php" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="form-inline">
+                    <div class="form-group was-validated ">
+                        <label class="col-5 form-control" for=" txtstrongpassword">
+                            Password
+                        </label>
+
+                        <div class="col-7">
+                            <input type="password" class="form-control" id="txtstrongpassword" placeholder="Password" />
+                            <span class="help-block">StrongPassword</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 form-control-lg" for="txtStrongPassword">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" id="txtStrongPassword" class="form-control"
+                                   placeholder="Your password">
+                            <span class="help-block">Strong Password1</span>
+                        </div>
+                    </div>
+                    <div class="form-group was-validated">
+                        <label class="col-md-2 form-control-lg" for="txtStrongPassword">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" id="txtStrongPassword" class="form-control"
+                                   placeholder="Your password">
+                            <span class="help-block">Strong Password</span>
+                        </div>
+                    </div>
+                    <div class="form-group was-validated ">
+                        <label class="col-md-2 form-control-sm" for=" txtstrongpassword">
+                            Password
+                        </label>
+
+                        <div class="col-md-10">
+                            <input type="password" class="form-control-sm" id="txtstrongpassword" placeholder="Password" />
+                            <span class="help-block">StrongPassword</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group was-validated ">
+                        <label class="col-5 form-control-lg" for=" txtstrongpassword">
+                            Password
+                        </label>
+
+                        <div class="col-7">
+                            <input type="password" class="form-control-lg" id="txtstrongpassword" placeholder="Password" />
+                            <span class="help-block">StrongPassword</span>
+                        </div>
+                    </div>
+                    <div class="form-group was-validated ">
+                        <label class="col-2 form-control-lg" for=" txtstrongpassword">
+                            Password
+                        </label>
+
+                        <div class="col-10">
+                            <input type="password" class="form-control-lg" id="txtstrongpassword" placeholder="Password" />
+                            <span class="help-block">StrongPassword</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group was-validated ">
+                        <label class="col-2 col-form-label" for=" txtstrongpassword">
+                            Password
+                        </label>
+
+                        <div class="col-10">
+                            <input type="password" class="form-control" id="txtstrongpassword" placeholder="Password" />
+                            <span class="help-block">StrongPassword</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+    <form class="was-validated">
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                   name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--<div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+        </div>-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <br />
+    <br />
+
+    <form>
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                   name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--<div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+        </div>-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <br />
+    <br />
+
+    <form >
+        <div class="form-group was-validated">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username"
+                   name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--<div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+        </div>-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

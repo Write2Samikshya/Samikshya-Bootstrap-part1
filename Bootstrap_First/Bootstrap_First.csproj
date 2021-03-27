@@ -1,0 +1,238 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82780364-F030-45BF-8151-B746D0206CF5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bootstrap_First</RootNamespace>
+    <AssemblyName>Bootstrap_First</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\img1.jpg.jpg" />
+    <Content Include="Images\img2.jpg.jpg" />
+    <Content Include="Images\img3.jpg.jpg" />
+    <Content Include="Images\img4.jpg.jpg" />
+    <Content Include="Images\project1.jpg" />
+    <Content Include="Images\samu1-.jpg.jpg" />
+    <Content Include="Images\samu1.jpg" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.min.js" />
+    <Content Include="CustomStylesheet.css" />
+    <Content Include="Images\samu2.jpg.jpg" />
+    <Content Include="Images\samu3.jpg.jpg" />
+    <Content Include="Images\samu4.jpg.jpg" />
+    <Content Include="Index.html" />
+    <Content Include="Index1.html" />
+    <Content Include="Index10.html" />
+    <Content Include="Index11.html" />
+    <Content Include="Index12.html" />
+    <Content Include="Index13.html" />
+    <Content Include="Index14.html" />
+    <Content Include="Index15.html" />
+    <Content Include="Index16.html" />
+    <Content Include="Index17.html" />
+    <Content Include="Index18.html" />
+    <Content Include="Index19.html" />
+    <Content Include="Index2.html" />
+    <Content Include="Index20.html" />
+    <Content Include="Index21.html" />
+    <Content Include="Index22.html" />
+    <Content Include="Index23.html" />
+    <Content Include="Index24.html" />
+    <Content Include="Index25.html" />
+    <Content Include="Index26.html" />
+    <Content Include="Index27.html" />
+    <Content Include="Index28.html" />
+    <Content Include="Index29.html" />
+    <Content Include="Index3.html" />
+    <Content Include="Index30.html" />
+    <Content Include="Index31.html" />
+    <Content Include="Index32.html" />
+    <Content Include="Index33.html" />
+    <Content Include="Index34.html" />
+    <Content Include="Index35.html" />
+    <Content Include="Index36.html" />
+    <Content Include="Index37.html" />
+    <Content Include="Index38.html" />
+    <Content Include="Index39.html" />
+    <Content Include="Index4.html" />
+    <Content Include="Index40.html" />
+    <Content Include="Index41.html" />
+    <Content Include="Index42.html" />
+    <Content Include="Index43.html" />
+    <Content Include="Index44.html" />
+    <Content Include="Index45.html" />
+    <Content Include="Index46.html" />
+    <Content Include="Index47.html" />
+    <Content Include="Index48.html" />
+    <Content Include="Index49.html" />
+    <Content Include="Index5.html" />
+    <Content Include="Index50.html" />
+    <Content Include="Index51.html" />
+    <Content Include="Index52.html" />
+    <Content Include="Index53.html" />
+    <Content Include="Index54.html" />
+    <Content Include="Index55.html" />
+    <Content Include="Index56.html" />
+    <Content Include="Index57.html" />
+    <Content Include="Index58.html" />
+    <Content Include="Index59.html" />
+    <Content Include="Index6.html" />
+    <Content Include="Index60.html" />
+    <Content Include="Index61.html" />
+    <Content Include="Index62.html" />
+    <Content Include="Index63.html" />
+    <Content Include="Index64.html" />
+    <Content Include="Index65.html" />
+    <Content Include="Index66.html" />
+    <Content Include="Index67.html" />
+    <Content Include="Index68.html" />
+    <Content Include="Index69.html" />
+    <Content Include="Index7.html" />
+    <Content Include="Index70.html" />
+    <Content Include="Index71.html" />
+    <Content Include="Index72.html" />
+    <Content Include="Index73.html" />
+    <Content Include="Index74.html" />
+    <Content Include="Index75.html" />
+    <Content Include="Index76.html" />
+    <Content Include="Index77.html" />
+    <Content Include="Index8.html" />
+    <Content Include="Index9.html" />
+    <Content Include="lib\jquery\jquery.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="lib\jquery\jquery.slim.js" />
+    <Content Include="lib\jquery\jquery.slim.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.js.map" />
+    <Content Include="bootstrap-4.4.1-dist\bootstrap-4.4.1-dist\js\bootstrap.min.js.map" />
+    <Content Include="libman.json" />
+    <Content Include="lib\jquery\jquery.min.map" />
+    <Content Include="lib\jquery\jquery.slim.min.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10241</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10241/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <title>mybootstrap1</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+
+    <link href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="CustomStylesheet.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+    <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous">
+
+    <style type="text/css">
+        body {
+            position: relative;
+                    }
+
+        #mainNavbar {
+            top: 20px;
+            position: fixed;
+        }
+        /*ul.nav-pills {
+            top: 20px;
+            position: fixed;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <nav id="mainNavbar">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item"><a class="nav-link active" href="#divDesert">Desert</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#divLighthouse">Lighthouse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#divTulips">Tulips</a></li>
+                        <li class=" nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                Animals
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li ><a class="dropdown-item" href="#divJellyfish">Jellyfish</a></li>
+                                <li ><a class="dropdown-item" href="#divPenguins">Penguins</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="col-9">
+                <div id="divDesert">
+                    <h1>Desert</h1>
+                    <img src="Images/img1.jpg.jpg" class="img-fluid" />
+                </div>
+
+                <div id="divLighthouse">
+                    <h1>Lighthouse</h1>
+                    <img src="Images/img2.jpg.jpg" class="img-fluid" />
+                </div>
+
+                <div id="divTulips">
+                    <h1>Tulips</h1>
+                    <img src="Images/img3.jpg.jpg" class="img-fluid" />
+                </div>
+
+                <div id="divJellyfish">
+                    <h1>Jellyfish</h1>
+                    <img src="Images/img4.jpg.jpg" class="img-fluid" />
+                </div>
+
+                <div id="divPenguins">
+                    <h1>Penguins</h1>
+                    <img src="Images/project1.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').scrollspy({
+                target: '#mainNavbar',
+                offset: 10
+            });
+        });
+    </script>
+</body>
+</html>

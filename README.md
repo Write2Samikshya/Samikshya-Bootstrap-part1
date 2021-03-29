@@ -1,1 +1,1 @@
-# somefrontendeBootsrap
+# samu-frontend-Bootsrap
